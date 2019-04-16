@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Remover Utilizador</title>
+	<link rel="stylesheet" href="../../css/pure-min.css">
+	<link rel="stylesheet" href="../../css/main.css">
+	<script type="text/javascript" src="remove_user.js"></script>
+	<script type="text/javascript" src="../../js/jquery-3.4.0.min.js"></script>
+</head>
+
+<body>
+	<h1>Remover Utilizador</h1>
+	
+	<section class="remove cf">
+		<form name="remove" action="https://axial-analyzer-233813.appspot.com/rest/remove/gbo" 
+		method="POST" accept-charset="UTF-8" class="pure-form">
+		<label for="username">Utilizador: </label>
+		<input type="text" name="username" placeholder="utilizador" required />
+		<input type="submit" value="Remover Utilizador" class="pure-button pure-button-primary"/>
+		</form>
+	</section>
+</body>
+</html>

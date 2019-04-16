@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>APDC - Login</title>
+	<link rel="stylesheet" href="css/pure-min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script type="text/javascript" src="js/login.js"></script>
+	<script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
+</head>
+
+<body>
+	<h1>Login</h1>
+	
+	<section class="loginform cf">
+		<form name="login" action="https://axial-analyzer-233813.appspot.com/rest/login" 
+		method="POST" accept-charset="UTF-8" class="pure-form">
+		
+		<label for="username">Utilizador: </label>
+		<input type="text" name="username" placeholder="utilizador" required />
+		<label for="password">Password: </label>
+		<input type="password" name="password" placeholder="password" required />
+		<input type="submit" value="Login" class="pure-button pure-button-primary"/>
+		</form>
+	</section>
+	<p>
+		<a href="register.html">Registar</a>
+	</p>
+	<p>
+		<a href="admin/index.html">Adicionar utilizador GS</a><br>
+		<a href="failedlogins.html">Ver número de logins falhados</a> (apenas para GS)
+	</p>
+
+</body>
+</html>

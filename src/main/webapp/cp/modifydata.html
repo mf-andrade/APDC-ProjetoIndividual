@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Modificar Dados de Utilizador</title>
+    <link rel="stylesheet" href="../css/pure-min.css">
+	<link rel="stylesheet" href="../css/main.css">
+    <script type="text/javascript" src="../js/jquery-3.4.0.min.js"></script>
+    <script type="text/javascript" src="modifydata.js"></script>
+</head>
+
+<body>
+    <h1>Modificar Dados de Utilizador</h1>
+    <section class="modify cf">
+        <p>Campos não preenchidos não serão alterados</p>
+        <form name="modify" method="post" accept-charset="UTF-8" id="modify" 
+        action="https://axial-analyzer-233813.appspot.com/rest/modify" class="pure-form pure-formstacked">
+            <ul>
+                <li>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" placeholder="password"  />
+                </li>
+                <li>
+                    <label for="email">Email</label>
+                    <input type="text" name="email" placeholder="email"  />
+                </li>
+                <li>
+                    <label for="profileStatus">Visibiliade do Perfil</label>
+                    <select name="profileStatus">
+                        <option value="public">Público</option>
+                        <option value="private">Privado</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="phoneNumber">phoneNumber</label>
+                    <input type="text" name="phoneNumber" placeholder="phoneNumber"  />
+                </li>
+                <li>
+                    <label for="mobilePhoneNumber">mobilePhoneNumber</label>
+                    <input type="text" name="mobilePhoneNumber" placeholder="mobilePhoneNumber"  />
+                </li>
+                <li>
+                    <label for="address">address</label>
+                    <input type="text" name="address" placeholder="address"  />
+                </li>
+                <input type="submit" value="Modificar Dados" class="pure-button pure-button-primary"/>
+            </ul>
+        </form>
+    </section>
+</body>
+</html>

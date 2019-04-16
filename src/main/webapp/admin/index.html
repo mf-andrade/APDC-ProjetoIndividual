@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Administration</title>
+    <link rel="stylesheet" href="../css/pure-min.css">
+	<link rel="stylesheet" href="../css/main.css">
+    <script type="text/javascript" src="../js/jquery-3.4.0.min.js"></script>
+    <script type="text/javascript" src="js/frontend.js"></script>
+</head>
+
+<body>
+        <h1>Registar Utilizador GS</h1>
+        <section class="register cf">
+            <form name="register" method="post" accept-charset="UTF-8" id="register" 
+            action="https://axial-analyzer-233813.appspot.com/rest/register/admin/add" class="pure-form">
+                <label for="username">Utilizador</label>
+                <input type="text" name="username" id="username" placeholder="utilizador"  /><p></p>
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="password"  /><p></p>
+                <label for="email">Email</label>
+                <input type="text" name="email" placeholder="email"  /><p></p>
+                <label for="name">Nome</label>
+                <input type="text" name="name" placeholder="nome"  /><p></p>
+                <label for="profileStatus">Visibiliade do Perfil</label>
+                <select name="profileStatus">
+                    <option value="public">Público</option>
+                    <option value="private">Privado</option>
+                </select><p></p>
+                <label for="phoneNumber">Nº de Telefone</label>
+                <input type="text" name="phoneNumber" placeholder="nº de Telefone"  /><p></p>
+                <label for="mobilePhoneNumber">Nº de Telemóvel</label>
+                <input type="text" name="mobilePhoneNumber" placeholder="nº de Telemóvel"  /><p></p>
+                <label for="address">Morada</label>
+                <input type="text" name="address" placeholder="morada"  /><p></p>
+                <input type="submit" value="Registar" class="pure-button pure-button-primary"/>
+            </form>
+        </section>
+    </body>
+</html>

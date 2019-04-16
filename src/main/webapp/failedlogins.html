@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>APDC - Login</title>
+	<link rel="stylesheet" href="css/pure-min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script type="text/javascript" src="js/failedlogins.js"></script>
+	<script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
+</head>
+
+<body>
+	<h1>Ver nº de tentativas de login falhadas</h1>
+	
+	<section class="failedform cf">
+		<form name="failed" action="https://axial-analyzer-233813.appspot.com/rest/gs/getfailedattempts" 
+		method="POST" accept-charset="UTF-8" class="pure-form">
+		<label for="username">Utilizador: </label>
+		<input type="text" name="username" placeholder="utilizador" required />
+		<input type="submit" value="Login" class="pure-button pure-button-primary"/>
+		</form>
+	</section>
+</body>
+</html>
